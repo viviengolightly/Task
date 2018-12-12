@@ -28,7 +28,7 @@ class App extends Component {
   getLoans = () =>{
     //GET
     const options ={
-      uri: 'http://localhost:5001/loans',
+      uri: 'https://localhost:5001/api/loans',
       json:true,
     };
     request(options)
@@ -39,7 +39,7 @@ class App extends Component {
   handleDelete = (id) =>{
       //DELETE
       const options ={
-        uri: `http://localhost:5001/loans/${id}`,
+        uri: `https://localhost:5001/api/loans/${id}`,
         json:true,
         method: 'DELETE'
       };
@@ -54,26 +54,29 @@ class App extends Component {
   findById = (id) => {
     //GET BY ID
     const options={
-      uri: `http://localhost:5001/loans/${id}`,
+      uri: `https://localhost:5001/api/loans/${id}`,
       json: true,
-      method: 'GET'
+      // method: 'GET'
     };
 
     request(options)
-      .then((loan) => {this.setState({loanByID: loan})})
+      // .then((loan) => {this.setState({loanByID: loan})})
+      .then((loan) => {console.log(loan.name)})
       .catch((err) => {console.log(err)});
   };
 
   handleAdd = (name, repay, fund) =>{
     //POST
     const options={
-      uri: `http:localhost:5001/loans`,
+      uri: 'https://localhost:5001/api/loans',
       body:{
         name: name,
         repayment: repay,
         funding: fund
       },
+      json: true,
       method: 'POST',
+
     };
 
     request(options)

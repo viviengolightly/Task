@@ -19,6 +19,7 @@ class SearchBox extends React.Component{
 
   handelSubmit = () =>{
     this.props.findLoan(this.state.value);
+    console.log("Val:" + this.state.value)
   }
 
   render(){

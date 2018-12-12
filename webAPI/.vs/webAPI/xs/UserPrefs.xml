@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{DDCE00DB-5897-4856-ACE1-439B945081B8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="webAPI/Controllers/LoansController.cs">
+    <Files>
+      <File FileName="webAPI/Models/LoanItem.cs" Line="5" Column="37" />
+      <File FileName="webAPI/Models/LoansContext.cs" Line="15" Column="1" />
+      <File FileName="webAPI/Startup.cs" Line="50" Column="39" />
+      <File FileName="webAPI/Controllers/LoansController.cs" Line="70" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.webAPI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
