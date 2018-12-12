@@ -8,9 +8,9 @@ const Loan = ({id, name, repaymentAmount, fundingAmount, del}) =>{
   };
   return(
     <li className="loan">
-      <div className="name">{name}</div>
-      <div className="repayment">{repaymentAmount}</div>
-      <div className="funding">{fundingAmount}</div>
+      <div className="name">Name: {name}</div>
+      <div className="repayment">Repayment amount: £{repaymentAmount}</div>
+      <div className="funding">Funding amount: £{fundingAmount}</div>
       <div><button onClick={handleClick}>Delete</button></div>
     </li>
   );

@@ -60,8 +60,8 @@ class App extends Component {
     };
 
     request(options)
-      // .then((loan) => {this.setState({loanByID: loan})})
-      .then((loan) => {console.log(loan.name)})
+      .then((loan) => {this.setState({loanByID: loan.name})})
+      // .then((loan) => {console.log(loan.name)})
       .catch((err) => {console.log(err)});
   };
 
@@ -93,7 +93,11 @@ class App extends Component {
         <div className="header">
           <h1>LOANS WEB APP</h1>
         </div>
+
         <div className="allLoans">
+
+          <h2 className="header2">LOANS LIST</h2>
+
             {this.state.loanList.map((loan) => {
               return(
                 <ul key={loan.id}>
@@ -109,12 +113,16 @@ class App extends Component {
             })}
         </div>
 
+
         <div className="searchBox">
           <SearchBox findLoan={this.findById}/>
           <p>{this.state.loanByID}</p>
         </div>
+        <div className="addLoan">
+          <AddLoan add={this.handleAdd} />
+          
+        </div>
 
-        <AddLoan add={this.handleAdd} />
       </div>
     );
   }
